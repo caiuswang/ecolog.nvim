@@ -761,9 +761,7 @@ function M.setup(opts)
   end)
 
   if opts.vim_env then
-    schedule(function()
-      get_env_module()
-    end)
+    get_env_module()
   end
 end
 
